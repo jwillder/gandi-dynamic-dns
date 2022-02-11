@@ -10,14 +10,14 @@
 if [ ! command -v curl &> /dev/null ]
 then
   echo "curl could not be found"
-  exit
+  exit 1
 fi
 
 # CHECK: jq is installed
 if [ ! command -v jq &> /dev/null ]
 then
   echo "jq could not be found"
-  exit
+  exit 1
 fi
 
 # CHECK: FQDN argument is present
